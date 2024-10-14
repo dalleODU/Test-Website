@@ -1,0 +1,25 @@
+
+/*Footer styling*/
+.site-footer {
+    background-size: cover; /* Ensure image covers the entire footer*/
+    background-position: center;
+    background-repeat: no-repeat; /* Do not repeat the footer image */
+    display: flex; 
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center contents vertically */
+    color: #000000;
+    text-align: center;
+    padding: 0;
+}
+
+.site-footer a{
+    color: #0066cc; /* Link coloring */
+}
+
+.site-footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.site-footer-credits {
+    padding: 10px;
+}

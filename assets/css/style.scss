@@ -1,0 +1,24 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/*Global styling*/
+@import "global";
+
+/* Navigation bar styling */
+@import "nav";
+
+/* Header styling */
+@import "header";
+
+/* Content content styling*/
+@import "content";
+
+/* Team section styling */
+@import "team";
+
+/* Footer styling */
+@import "footer";
+
+@import "media-queries"

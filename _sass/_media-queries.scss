@@ -1,0 +1,52 @@
+
+/* Tablet Viewing */
+@media screen and (max-width: 1024px) {
+    .header-content {
+        padding-top: 12vh;
+    }
+}
+
+/* Mobile Viewing */
+@media screen and (max-width: 576px) {
+    .header-content {
+        margin-top: 0px;
+        padding-top: 6vh;
+    }
+    .section-content {
+        flex-direction: column; /* stack items verticaly*/
+    }
+    .feature-section{
+        flex-direction: column; /* stack items verticaly*/
+    }
+    .feature-section .image-text-block {
+        margin-bottom: 20px;
+    }
+    .text-content {
+        padding: 15px; /* Overwrite inherited 20px padding */
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 385px) {
+    #title {
+        font-size: 2rem;
+        padding: 5px, 10px;
+    }
+    #tagline {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
