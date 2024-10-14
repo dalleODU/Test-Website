@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  
+  <head>
+    <meta charset="UTF-8">
+    {% seo %}
+    <!--Importing Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+
+  <!--SITE BODY-->
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <!-- NAVIGATION BAR-->
+    <nav>
+      <ul class="nav-bar">
+
+        <!--Home-->
+        <li><a href="/">Home</a></li>
+
+        <!--About-->
+        <li>
+          <a href="#">About</a>
+          <ul class="dropdown">
+            <li><a href="/#problem-statement">The Problem</a></li>
+            <li><a href="/#solution-statement">The Solution</a></li>
+            <li><a href="/#team-section">The Team</a></li>
+          </ul>
+        </li>
+
+        <!--Presentations-->
+        <li>
+          <a href="/presentations/">Presentations</a>
+          <ul class="dropdown">
+            <li><a href="/presentations/#feasibility-1">Feasibility 1</a></li>
+            <li><a href="/presentations/#feasibility-2">Feasibility 2</a></li>
+            <li><a href="/presentations/#feasibility-3">Feasibility 3</a></li>
+            <li><a href="/presentations/#final-feasibility">Final Feasibility</a></li>
+          </ul>
+        </li>
+
+        <!--References Section-->
+        <li><a href="/presentations/#references">References</a></li>
+
+        <!--Deliverables Placeholder-->
+        <li><a href="#">Deliverables</a></li>
+
+      </ul>
+    </nav>
+
+    <!--SITE HEADER-->
+    <header class="custom-header" role="banner" style="background-image: url('../assets/images/main-content/banner.webp');">
+      <div class="header-content">
+
+          <h1 id="title">CreditTrax</h1>
+          <h2 id="tagline">Empowering young professionals for financial Success</h2>
+
+          <!--Github Button-->
+          <div class="header-buttons">
+              {% if site.github.is_project_page %}
+                  <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+              {% endif %}
+              {% if site.show_downloads %}
+                  <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+                  <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+              {% endif %}
+          </div>
+
+      </div>
+    </header>
+  
+    <!--MAIN CONTENT AREA-->
+    <main id="content" class="main-custom" role="main">
+      {{ content }}
+    </main>
+  </body>
+  
+  <!--SITE FOOTER SECTION-->
+  <footer class="site-footer" style="background-image: url('../assets/images/main-content/footer.webp');">
+
+    <!--Default Footer Content-->
+      <a href="https://www.odu.edu/">Old Dominion University</a> 
+      <a href="https://www.cs.odu.edu/">Department of Computer Science</a>
+
+      <!--Team Name-->
+      <span class="site-footer-credits">
+          Team Copper 2024
+      </span>
+    </footer>
+</html>
