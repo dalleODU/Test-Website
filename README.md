@@ -1,2 +1,2 @@
-# CreditTrax
-The website for Team Copper 2024.
+# A Site For Testing
+A testing site
