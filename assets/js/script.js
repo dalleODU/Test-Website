@@ -1,4 +1,5 @@
 
+
 window.onscroll = function() {slideDownNavBar()};
 
 /**
@@ -9,7 +10,7 @@ function slideDownNavBar() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("nav-bar").style.top = "0"; // Slide out the nav-bar.
     } else {
-      document.getElementById("nav-bar").style.top = "-55px"; // Slide up the nav bar.
+      document.getElementById("nav-bar").style.top = "-110px"; // Slide up the nav bar.
     }
   }
 

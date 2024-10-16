@@ -1,3 +1,11 @@
+#fixed-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure image stays behind other content */
+}
 
 /* Header Styling */
 .custom-header {
@@ -7,7 +15,7 @@
     display: flex; 
     justify-content: center;
     height: 100vh; /* Cover the entire view height */
-
+    margin-top: 52px; /* Margin adjustment for the nav-bar */
 }
 
 .header-content {

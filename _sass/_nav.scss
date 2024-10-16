@@ -5,7 +5,7 @@
     position: fixed; /* Keep nav-bar on screen while scrolling */
     background: linear-gradient(90deg, #2e865b, #256fb9); /* Gradient coloring*/
     width: 100%; /* Nav bar should stretch the entire screen */
-    top: -55px; /* Position nav bar at top */
+    top: -110px; /* Position nav bar at top */
     margin: 0; padding: 0;
     list-style-type: none; /* Remove list styling */
     z-index: 5; /* Nav bar should always be on the top layer and not covered */
@@ -29,7 +29,7 @@
 }
 
 /* Nav bar dropdown styling */
-#nav-bar .dropdown {
+.dropdown {
     position: absolute; /* Relative to its li parent */
     display: none; /* Hides this dropdown initially */
     min-width: 150px; 
@@ -45,11 +45,11 @@
     display: block; /* Makes the dropdown visible when hovering over its parent li */
 }
 
-#nav-bar .dropdown li {
+.dropdown li {
     width: 100%; /* dropdown items will take the whole width of their parent*/
 }
 
-#nav-bar .dropdown li a {
+.dropdown li a {
     padding: 8px 12px; /* Vertical and horizontal padding around dropdown links */
     color: #333333; 
     text-decoration: none; /* Removes default underline from links */
@@ -57,7 +57,7 @@
     text-overflow: ellipsis; /* Display '...' for overflowing text */
 }
 
-#nav-bar .dropdown li a:hover {
+.dropdown li a:hover {
     background-color: rgba(0,0,0,0.1); /* Slight change to background color on hover */
     border-radius: 4px;
 }
